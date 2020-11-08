@@ -11,11 +11,11 @@
 
 		<!-- Header -->
 			<div id="header">
-			  <span class="logo icon fa-credit-card"></span>
-				<h1>Santander Bank Product Recommendation</h1>
-				<p><em><b>Personalized financial products recommendation for Santander's customers. </b></em>
+			  <span class="logo icon fa-store"></span>
+				<h1>Google Analytics Customer Revenue Prediction</h1>
+				<p><em><b>Predicted transaction revenue of Google Merchandise Store. </b></em>
 				<br /><br />
-				<a href="https://github.com/wang1558/Santander-Bank-Product-Recommendation" class="button primary" target="_blank">View on GitHub</a>
+				<a href="https://github.com/wang1558/Google-Analytics-Customer-Revenue-Prediction" class="button primary" target="_blank">View on GitHub</a>
 				</p>
 			</div>
 
@@ -28,23 +28,30 @@
 						<header>
 							<h3>About the Project</h3>
 						</header>
-						<p>The main objective of this project is to recommend the financial products that Santander's customers would like to purchase in the next month based on their transaction histories from January 2015 to May 2016. A precise recommendation algorithm will effectively boost Santander's revenue and provide customers with personalized experiences.</p>
+						<p>The main objective is to predict transaction revenue for the following 60 days and to predict transaction revenue based on each customer visiting Google Store. The research question was broken down into three parts:</p>
+						<ol class="default">
+						  <li>Forecast daily transaction revenue by using a time series model</li>
+						  <li>Classify whether a customer is going to purchase some products</li>
+						  <li>Predict the total revenue a customer is going to make</li>
+						</ol>
 					</section>
 					<section>
 						<header>
 							<h3>Methodology</h3>
 						</header>
 						<ul class="default">
-							<li>Engineered new features including customers' purchase behavior (temporal effects)</li>
-							<li>Implemented user-based collaborative filtering, matrix factorization, and XGBoost algorithm to make predictions</li>
-							<li>Applied one vs rest method by combining multiple binary classifiers to train XGBoost model</li>
+							<li>Fitted seasonal ARIMA model to capture weekly pattern</li>
+							<li>Performed nested cross-validation to avoid overfitting for time series model</li>
+							<li>Applied rolling window method to make predictions</li>
+							<li>Attempted over-sampling techniques to deal with imbalanced dataset</li>
+							<li>Completed feature engineering by identifying correlation within variables</li>
 						</ul>
 					</section>
 					<section>
 						<header>
 							<h3>Further Details</h3>
 						</header>
-						<p>For more information, check out <!--the Presentation Deck <a href="../files/Santander/Presentation.pdf" target="_blank"><b><em>here</em></b></a> and--> the Project Report <a href="../files/Santander/Final Report.pdf" target="_blank"><b><em>here</em></b></a>.
+						<p>For more information, check out the Presentation Deck <a href="../files/Google/Presentation.pdf" target="_blank"><b><em>here</em></b></a> and the Project Report <a href="../files/Google/Final Report.pdf" target="_blank"><b><em>here</em></b></a>.
 						</p>
 					</section>
 					
